@@ -1,3 +1,46 @@
 body {
-  color: red;
+  background: radial-gradient(
+    circle at 11.7% 80.6%,
+    rgb(249, 185, 255) 0%,
+    rgb(177, 172, 255) 49.3%,
+    rgb(98, 203, 255) 89%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-app {
+  margin: 0 auto;
+  padding: 15px;
+  width: 750px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  line-height: 20px;
+}
+
+.search-button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }

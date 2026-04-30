@@ -7,33 +7,44 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Search for a city..." />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <body>
-      <h1>⛅</h1>
-      <h2>Auckland, NZ</h2>
-      <h3>23°C</h3>
-      <p>
-        Thursday 20 April 2026
-        <br />
-        Mostly Sunny
-        <br />
-        Humidity: 60% Windspeed: 15 km/h
-      </p>
-    </body>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/lauren-ana" target="_blank">Lauren Hohepa</a>,
-      is
-      <a href="https://github.com/lauren-ana/huarere-app" target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="https://www.netlify.com/" target="_blank">hosted on Netlify.</a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search for a city..."
+            required
+          />
+          <input type="submit" class="search-button" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div><h1>⛅</h1></div>
+        <div><h2>Auckland, NZ</h2></div>
+        <div><h3>23°C</h3></div>
+        <div>
+          <p>
+            Thursday 20 April 2026
+            <br />
+            Mostly Sunny
+            <br />
+            Humidity: 60% Windspeed: 15 km/h
+          </p>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/lauren-ana" target="_blank">Lauren Hohepa</a
+        >, is
+        <a href="https://github.com/lauren-ana/huarere-app" target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://www.netlify.com/" target="_blank"
+          >hosted on Netlify.</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
