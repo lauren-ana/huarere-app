@@ -9,14 +9,20 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             class="search-input"
             placeholder="Search for a city..."
             required
+            id="search-input"
           />
-          <input type="submit" class="search-button" value="Search" />
+          <input
+            type="submit"
+            class="search-button"
+            value="Search"
+            id="search-button"
+          />
         </form>
       </header>
       <main>
@@ -24,7 +30,9 @@
           <div class="daily-forecast-item">
             <div class="forecast-emoji"><h1>⛅</h1></div>
             <div class="forecast-item">
-              <div class="forecast-city"><p>Auckland, NZ</p></div>
+              <div class="forecast-city" id="forecast-city">
+                <p>Auckland</p>
+              </div>
               <div class="forecast-temp">
                 <p>23</p>
                 <div class="forecast-degree">°C</div>
@@ -59,4 +67,5 @@
       </footer>
     </div>
   </body>
+  <script src="src/script.js"></script>
 </html>
