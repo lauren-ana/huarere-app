@@ -9,7 +9,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Roboto", sans-serif;
-  padding: 30px;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh;
+  margin: 0;
 }
 
 header {
