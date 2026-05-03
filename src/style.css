@@ -47,7 +47,7 @@ header {
 }
 
 .daily-forecast {
-  margin: 30px 0;
+  margin: 20px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -55,6 +55,7 @@ header {
 .daily-forecast-item {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 .daily-forecast-item p {
@@ -77,7 +78,7 @@ header {
 
 .forecast-temp {
   display: flex;
-  position: relative;
+  align-items: flex-start;
   font-size: 50px;
   font-weight: bold;
 }
@@ -89,5 +90,22 @@ header {
 
 .daily-forecast-date {
   text-align: right;
-  line-height: 20px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+.weekly-forecast {
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.weekly-forecast strong {
+  color: #7544a8;
+}
+
+.weekly-emoji {
+  font-size: 30px;
 }
