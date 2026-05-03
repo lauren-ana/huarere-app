@@ -97,19 +97,3 @@ header {
   line-height: 30px;
   margin-right: 10px;
 }
-
-.weekly-forecast {
-  line-height: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.weekly-forecast strong {
-  color: #7544a8;
-}
-
-.weekly-emoji {
-  font-size: 30px;
-}
