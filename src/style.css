@@ -8,22 +8,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
 }
 
 .weather-app {
   margin: 0 auto;
-  padding: 15px;
-  width: 750px;
-  height: 350px;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
+  padding: 30px;
+  width: 600px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(30px);
   border-radius: 14px;
-}
-
-form {
-  display: flex;
-  justify-content: center;
 }
 
 .search-input {
@@ -43,4 +44,50 @@ form {
   width: 80px;
   background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
+}
+
+.daily-forecast {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily-forecast-item {
+  display: flex;
+  align-items: center;
+}
+
+.daily-forecast-item p {
+  margin: 0;
+}
+
+.forecast-emoji {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.forecast-emoji h1 {
+  margin: 0;
+}
+
+.forecast-city {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.forecast-temp {
+  display: flex;
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.forecast-degree {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.daily-forecast-date {
+  text-align: right;
+  line-height: 20px;
 }
