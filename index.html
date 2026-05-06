@@ -29,13 +29,13 @@
       <main>
         <div class="daily-forecast">
           <div class="daily-forecast-item">
-            <div class="forecast-emoji"><h1>⛅</h1></div>
+            <div class="forecast-emoji" id="forecast-emoji"><h1>⛅</h1></div>
             <div class="forecast-item">
               <div class="forecast-city" id="forecast-city">
                 <p>Auckland</p>
               </div>
               <div class="forecast-temp">
-                <div class="forecast-degree">
+                <div class="forecast-degree" id="forecast-degree">
                   <p>23</p>
                 </div>
                 <div class="forecast-unit">°C</div>
@@ -44,13 +44,13 @@
           </div>
           <div class="daily-forecast-date">
             <p>
-              <span class="current-date"> Tuesday, 12:00 PM </span>
+              <span id="current-date"> Tuesday, 12:00 PM </span>
               <br />
-              <span class="condition-description"> Mostly Sunny </span>
+              <span id="condition-description"> Mostly Sunny </span>
               <br />
               🌢
-              <span class="humidity">60</span>% ༄
-              <span class="wind-speed">15</span> km/h
+              <span id="humidity">60</span>% ༄
+              <span id="wind-speed">15</span> km/h
             </p>
           </div>
         </div>
@@ -71,6 +71,6 @@
         </small>
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
-  <script src="src/script.js"></script>
 </html>
