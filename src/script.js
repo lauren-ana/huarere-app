@@ -6,6 +6,7 @@ function refreshTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#current-date");
+  let emojiElement = document.querySelector("#forecast-emoji");
   let date = new Date(response.data.time * 1000);
 
   cityInputElement.innerHTML = response.data.city;
@@ -14,6 +15,8 @@ function refreshTemperature(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
   degreeElement.innerHTML = Math.round(currentTemp);
+  emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}"/>`;
+  console.log(response.data.condition.icon_url);
 }
 
 function displayDate(date) {
