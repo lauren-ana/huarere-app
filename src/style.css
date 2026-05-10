@@ -111,5 +111,6 @@ header {
 }
 
 .weekly-emoji {
-  font-size: 30px;
+  max-width: 75px;
+  max-height: 75px;
 }
