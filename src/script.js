@@ -16,6 +16,8 @@ function refreshTemperature(response) {
   windSpeedElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
   degreeElement.innerHTML = Math.round(currentTemp);
   emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}"/>`;
+
+  searchForecast();
 }
 
 function displayDate(date) {
@@ -55,7 +57,17 @@ function handleSearch(event) {
 let searchCityForm = document.querySelector("#search-form");
 searchCityForm.addEventListener("submit", handleSearch);
 
-function displayForecast() {
+function searchForecast(city) {
+  let apiKey = "9ca9f78o333f17d1c9f4d8ae5b0f036t";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&unit=metric`;
+
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let weeklyForecastElement = document.querySelector("#weekly-forecast");
 
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
@@ -76,4 +88,3 @@ function displayForecast() {
 }
 
 searchCity("Auckland");
-displayForecast();
