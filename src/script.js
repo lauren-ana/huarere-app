@@ -16,7 +16,6 @@ function refreshTemperature(response) {
   windSpeedElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
   degreeElement.innerHTML = Math.round(currentTemp);
   emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}"/>`;
-  console.log(response.data.condition.icon_url);
 }
 
 function displayDate(date) {
@@ -56,4 +55,25 @@ function handleSearch(event) {
 let searchCityForm = document.querySelector("#search-form");
 searchCityForm.addEventListener("submit", handleSearch);
 
+function displayForecast() {
+  let weeklyForecastElement = document.querySelector("#weekly-forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-days">
+    ${day}
+    <br />
+    <strong>18</strong> / 12
+    <br />
+    <div class="weekly-emoji">⛅</div>
+    </div>`;
+  });
+  weeklyForecastElement.innerHTML = forecastHtml;
+}
+
 searchCity("Auckland");
+displayForecast();
